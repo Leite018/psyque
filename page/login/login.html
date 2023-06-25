@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/styleLogin.css">
+    <script>
+        function goBack() {
+            window.history.back()
+        }
+    </script>
   </head>
 
   <body>
@@ -28,23 +33,37 @@
 
 
     <section>
-    <div class="form-box">
-    <form class="login" action="" method="post">
-    <div>
-        <label for="email">E-mail</label>
-        <input type="email" name="email" id="email">
-    </div>
-    <div>
-        <label for="senha">Senha</label>
-        <input type="password" name="senha" id="senha">
-    </div>
-    <div>
-        <button type="submit">Login</button>
-    </div>
-    </form>
-    </div>
+        <div class="form-box">
+            <div class="form-value">
+                <button onclick="goBack()" class="voltar">Voltar</button>
+
+                <form action="">
+                    <h2>Login</h2>
+                    <div class="inputbox boxMail">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Senha</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Lembrar-me</label>
+                        <a href="#">Esqueceu sua senha?</a>
+                    </div>
+                    <button>Entrar</button>
+                    <div class="register">
+                        <p>Não possui uma conta? <a href="#">Registre-se</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
 
+
+    
     <main></main> 
     <script src="../../js/mobile-navbar.js"></script>
   </body>
