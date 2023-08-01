@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/styleLogin.css">
+    <script>
+        function goBack() {
+            window.history.back()
+        }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="/"> PSYCHE DIÁRIA</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="../../index.html">Inicio</a></li> 
+          <li><a href="page\">Sobre</a></li>
+          <li><a href="page\">Projetos</a></li>
+          <li><a href="page\">Contatos</a></li>
+          <li><a href="page/login/login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <button onclick="goBack()" class="voltar">Voltar</button>
+
+                <form action="">
+                    <h2>Login</h2>
+                    <div class="inputbox boxMail">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Senha</label>
+                    </div>
+                    <div class="inputbox typeUser">
+                      <label></label>
+                        <select name="typeUser" id="typeUser">
+                          <option value=""></option>
+                          <option value="pessoa">Pessoa</option>
+                          <option value="profissional">Profissional</option>
+                        </select>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Lembrar-me</label>
+                        <a href="#">Esqueceu sua senha?</a>
+                    </div>
+                    <button>Entrar</button>
+                    <div class="register">
+                        <p>Não possui uma conta? <a href="#">Registre-se</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <main></main> 
+    <script src="../../js/mobile-navbar.js"></script>
+  </body>
+</html>
